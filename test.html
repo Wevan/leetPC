@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/test.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('#myTab li:eq(1) a').tab('show');
+        });
+    </script>
+    <style>
+        html {
+            font-family: 微软雅黑, serif;
+            color: #999999;
+        }
+
+        a {
+            color: #1D8CE0;
+            cursor: pointer;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /*html, body {*/
+        /*height: 100%;*/
+        /*}*/
+
+        .footer {
+            padding-top: 18px;
+            /*margin-top: 50px;*/
+            height: 180px;
+            z-index: 9999;
+            color: white;
+            margin-bottom: 0;
+            font-family: PingFang-SC-Medium, serif;
+        }
+    </style>
+    <script>
+        function login() {
+            if (document.getElementById("login").style.display === "none") {
+                document.getElementById("login").style.display = "block";
+            } else {
+                document.getElementById("login").style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="tabbar">
+    <span class="logo">LOGO</span>
+    <span class="menu">首页</span>
+    <span class="menu">测验</span>
+    <span class="menu">简历</span>
+    <span class="menu">外包管理</span>
+    <span class="menu">电商</span>
+    <span class="menu">…</span>
+    <img style="width: 16px;height: 19px;margin-left: 350px;z-index: 5;" src="img/alert.png"/>
+    <img onclick="login()" style="width: 38px;height: 38px;border-radius: 50%;margin-left: 18px;z-index: 5;"
+         src="img/athor.jpg"/>
+    <img onclick="login()" src="img/down.png" style="width: 10px;height: 6px;margin-left: 17px;z-index: 5;"/>
+</div>
+<div id="login"
+     style="width: 110px;height: 70px;background: #262626;z-index: 5;float: right;margin-right: 170px;display: none">
+    <ul style="padding: 5px 7px 5px 7px;">
+        <li><img style="width: 20px;height: 20px;" src="img/Group%2014.png"/>&nbsp;&nbsp;个人中心</li>
+        <li style="margin-top: 8px"><img style="width: 20px;height: 20px;" src="img/Group%2015.png"/>&nbsp;&nbsp;退出登录
+        </li>
+    </ul>
+</div>
+<ul class="nav nav-tabs" style="position: absolute;margin-top: 470px;margin-left: 57px">
+    <li class="active" style="display: block"><a href="#home" data-toggle="tab">
+        日期</a>
+    </li>
+    <li style="display: block"><a href="#ios" data-toggle="tab">难度</a></li>
+
+</ul>
+
+<div class="content">
+    <div class="left" style="width: 880px;float: left;margin-left: 60px">
+        <div style="width: 100%;">
+            <img src="img/clazz.png"/>
+            <b>类别-全部</b>
+            <a>查看更多 >></a>
+        </div>
+        <div style="height: 180px;">
+            <div class="serction1">
+                <img src="img/Group%2011.png"/>
+                <span>专项练习</span>
+            </div>
+            <div class="serction2" style="background: #EACD77">
+                <img src="img/Group%2013.png"/>
+                <span>公司真题</span>
+            </div>
+            <div class="serction2" style="background: #C477EA">
+                <img src="img/renwu.png"/>
+                <span>试题广场</span>
+            </div>
+            <div class="serction2" style="background: #20A0FF">
+                <img src="img/Group%2032.png"/>
+                <span>技能认证</span>
+            </div>
+        </div>
+        <hr width="98%" style="margin-left: -0.4px;border: 1px solid #D3DCE6;">
+        <form class="bs-example bs-example-form" role="form" style="margin-left: 245px">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="请输入内容" style="width: 283px;height: 36px;">
+                        <span class="input-group-btn">
+						<button class="btn btn-default" type="button"
+                                style="background: #20A0FF;border: 0;width: 80px;height: 36px;">
+							<img src="img/search.png" style="width: 19.4px;height: 19.4px;"/>
+                            <span style="color: white">搜索</span>
+						</button>
+					</span>
+                    </div><!-- /input-group -->
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+        </form>
+        <div style="white-space: nowrap;height: 45px;margin-top: 42px;margin-left: 230px">
+
+
+            <p>
+                <b>热门搜索</b>
+                <span style="margin-left: 8px">Java</span>
+                <span style="margin-left: 8px">C++</span>
+                <span style="margin-left: 8px">iOS</span>
+                <span style="margin-left: 8px">PHP</span>
+                <span style="margin-left: 8px">运维</span>
+                <span style="margin-left: 8px">数据库</span>
+                <span style="margin-left: 8px">算法</span>
+            </p>
+
+        </div>
+
+        <!--<div style="position: relative">-->
+            <!--<ul id="myTab" class="nav nav-tabs">-->
+                <!--<li class="active" style="display: block"><a href="#home" data-toggle="tab">-->
+                    <!--日期</a>-->
+                <!--</li>-->
+                <!--<li style="display: block"><a href="#ios" data-toggle="tab">难度</a></li>-->
+
+            <!--</ul>-->
+        <!--</div>-->
+
+        <div style="height: 780px;margin-top: 71px;margin-left: 0px">
+
+            <table border="0" class="table2">
+                <tr>
+                    <td>
+                        <div class="partcard">
+                            <div style="width: 100%;height: 17px;">
+                              <span class="cardone">
+                                难度 &nbsp;&nbsp;
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/线星.png"/>
+                             </span>
+                                <span class="time"><img src="img/时间.png"/>&nbsp;&nbsp;120min</span>
+                            </div>
+
+                            <div style="font-size: 28px;width:100%;text-align: center;height: 40px;margin-top: 45px;">
+                                npm基础
+                            </div>
+                            <div style="font-size: 12px;width: 100%;height: 17px;text-align: center;color: #999999;margin-top: 8px">
+                                183人答题
+                            </div>
+                            <div style="width: 100%;align-content: center;margin-top: 20px">
+                                <button style="border: 1px solid #20A0FF;border-radius: 6px;color: #20A0FF;background: white;padding: 5px 39px 5px 39px;font-size: 14px">
+                                    去做题
+                                </button>
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="partcard">
+                            <div style="width: 100%;height: 17px;">
+                              <span class="cardone">
+                                难度 &nbsp;&nbsp;
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/线星.png"/>
+                                <img src="img/线星.png"/>
+                             </span>
+                                <span class="time"><img src="img/时间.png"/>&nbsp;&nbsp;90min</span>
+                            </div>
+
+                            <div style="font-size: 28px;width:100%;text-align: center;height: 40px;margin-top: 45px;">
+                                Java基础
+                            </div>
+                            <div style="font-size: 12px;width: 100%;height: 17px;text-align: center;color: #999999;margin-top: 8px">
+                                234人答题
+                            </div>
+                            <div style="width: 100%;align-content: center;margin-top: 20px">
+                                <button style="border: 1px solid #20A0FF;border-radius: 6px;color: #20A0FF;background: white;padding: 5px 39px 5px 39px;font-size: 14px">
+                                    去做题
+                                </button>
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="partcard">
+                            <div style="width: 100%;height: 17px;">
+                              <span class="cardone">
+                                难度 &nbsp;&nbsp;
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                             </span>
+                                <span class="time"><img src="img/时间.png"/>&nbsp;&nbsp;45min</span>
+                            </div>
+
+                            <div style="font-size: 28px;width:100%;text-align: center;height: 40px;margin-top: 45px;">
+                                Java高级
+                            </div>
+                            <div style="font-size: 12px;width: 100%;height: 17px;text-align: center;color: #999999;margin-top: 8px">
+                                53人答题
+                            </div>
+                            <div style="width: 100%;align-content: center;margin-top: 20px">
+                                <button style="border: 1px solid #20A0FF;border-radius: 6px;color: #20A0FF;background: white;padding: 5px 39px 5px 39px;font-size: 14px">
+                                    去做题
+                                </button>
+                            </div>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="partcard">
+                            <div style="width: 100%;height: 17px;">
+                              <span class="cardone">
+                                难度 &nbsp;&nbsp;
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/线星.png"/>
+                                <img src="img/线星.png"/>
+                                <img src="img/线星.png"/>
+                             </span>
+                                <span class="time"><img src="img/时间.png"/>&nbsp;&nbsp;30min</span>
+                            </div>
+
+                            <div style="font-size: 28px;width:100%;text-align: center;height: 40px;margin-top: 45px;">
+                                JavaScript基础
+                            </div>
+                            <div style="font-size: 12px;width: 100%;height: 17px;text-align: center;color: #999999;margin-top: 8px">
+                                150人答题
+                            </div>
+                            <div style="width: 100%;align-content: center;margin-top: 20px">
+                                <button style="border: 1px solid #20A0FF;border-radius: 6px;color: #20A0FF;background: white;padding: 5px 39px 5px 39px;font-size: 14px">
+                                    去做题
+                                </button>
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="partcard">
+                            <div style="width: 100%;height: 17px;">
+                              <span class="cardone">
+                                难度 &nbsp;&nbsp;
+                                <img src="img/黄星.png"/>
+                                <img src="img/线星.png"/>
+                                <img src="img/线星.png"/>
+                                <img src="img/线星.png"/>
+                                <img src="img/线星.png"/>
+                             </span>
+                                <span class="time"><img src="img/时间.png"/>&nbsp;&nbsp;90min</span>
+                            </div>
+
+                            <div style="font-size: 28px;width:100%;text-align: center;height: 40px;margin-top: 45px;">
+                                C++基础
+                            </div>
+                            <div style="font-size: 12px;width: 100%;height: 17px;text-align: center;color: #999999;margin-top: 8px">
+                                234人答题
+                            </div>
+                            <div style="width: 100%;align-content: center;margin-top: 20px">
+                                <button style="border: 1px solid #20A0FF;border-radius: 6px;color: #20A0FF;background: white;padding: 5px 39px 5px 39px;font-size: 14px">
+                                    去做题
+                                </button>
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="partcard">
+                            <div style="width: 100%;height: 17px;">
+                              <span class="cardone">
+                                难度 &nbsp;&nbsp;
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/线星.png"/>
+                             </span>
+                                <span class="time"><img src="img/时间.png"/>&nbsp;&nbsp;45min</span>
+                            </div>
+
+                            <div style="font-size: 28px;width:100%;text-align: center;height: 40px;margin-top: 45px;">
+                                C++高级
+                            </div>
+                            <div style="font-size: 12px;width: 100%;height: 17px;text-align: center;color: #999999;margin-top: 8px">
+                                80人答题
+                            </div>
+                            <div style="width: 100%;align-content: center;margin-top: 20px">
+                                <button style="border: 1px solid #20A0FF;border-radius: 6px;color: #20A0FF;background: white;padding: 5px 39px 5px 39px;font-size: 14px">
+                                    去做题
+                                </button>
+                            </div>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="partcard">
+                            <div style="width: 100%;height: 17px;">
+                              <span class="cardone">
+                                难度 &nbsp;&nbsp;
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/线星.png"/>
+                                <img src="img/线星.png"/>
+                             </span>
+                                <span class="time"><img src="img/时间.png"/>&nbsp;&nbsp;120min</span>
+                            </div>
+
+                            <div style="font-size: 28px;width:100%;text-align: center;height: 40px;margin-top: 45px;">
+                                JavaScript高级
+                            </div>
+                            <div style="font-size: 12px;width: 100%;height: 17px;text-align: center;color: #999999;margin-top: 8px">
+                                183人答题
+                            </div>
+                            <div style="width: 100%;align-content: center;margin-top: 20px">
+                                <button style="border: 1px solid #20A0FF;border-radius: 6px;color: #20A0FF;background: white;padding: 5px 39px 5px 39px;font-size: 14px">
+                                    去做题
+                                </button>
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="partcard">
+                            <div style="width: 100%;height: 17px;">
+                              <span class="cardone">
+                                难度 &nbsp;&nbsp;
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/线星.png"/>
+                                <img src="img/线星.png"/>
+                                <img src="img/线星.png"/>
+                             </span>
+                                <span class="time"><img src="img/时间.png"/>&nbsp;&nbsp;90min</span>
+                            </div>
+
+                            <div style="font-size: 28px;width:100%;text-align: center;height: 40px;margin-top: 45px;">
+                                算法基础
+                            </div>
+                            <div style="font-size: 12px;width: 100%;height: 17px;text-align: center;color: #999999;margin-top: 8px">
+                                234人答题
+                            </div>
+                            <div style="width: 100%;align-content: center;margin-top: 20px">
+                                <button style="border: 1px solid #20A0FF;border-radius: 6px;color: #20A0FF;background: white;padding: 5px 39px 5px 39px;font-size: 14px">
+                                    去做题
+                                </button>
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="partcard">
+                            <div style="width: 100%;height: 17px;">
+                              <span class="cardone">
+                                难度 &nbsp;&nbsp;
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                                <img src="img/黄星.png"/>
+                             </span>
+                                <span class="time"><img src="img/时间.png"/>&nbsp;&nbsp;300min</span>
+                            </div>
+
+                            <div style="font-size: 28px;width:100%;text-align: center;height: 40px;margin-top: 45px;">
+                                算法高级
+                            </div>
+                            <div style="font-size: 12px;width: 100%;height: 17px;text-align: center;color: #999999;margin-top: 8px">
+                                90人答题
+                            </div>
+                            <div style="width: 100%;align-content: center;margin-top: 20px">
+                                <button style="border: 1px solid #20A0FF;border-radius: 6px;color: #20A0FF;background: white;padding: 5px 39px 5px 39px;font-size: 14px">
+                                    去做题
+                                </button>
+                            </div>
+
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <ul style="margin-top: 40px">
+                <li style="height: 4.7rem;">
+                    <ul class="pagination" style="margin-left: 250px">
+                        <li><a href="#">&laquo;</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li class="disabled"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                        &nbsp;前往<input value="2"
+                                       style="width: 2.25rem;height: 2.25rem;border: none;border-radius: 2px;text-align: center">页
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!--右半部分-->
+    <div class="right" style="float: right;margin-right: 50px">
+        <div class="hot">
+            <div style="height: 300px;background: #ffffff">
+                <br>
+                <br>
+                <br>
+                <p style="font-size: 20px"><img src="img/Group%2037.png" class="gang"/>&nbsp;&nbsp;&nbsp;热门点击</p>
+                <ul>
+                    <li style="margin-top: 1.5rem"><span class="try" style="color: #FF4949"><img src="img/redone.png"
+                                                                                                 class="hotpic"/>&nbsp;&nbsp;&nbsp;TestRabbit.java&nbsp;&nbsp;&nbsp;<img
+                            src="img/Group%2036.png" style="width: 0.64em;height: 0.88em;"></span></li>
+                    <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;Consecutive Numbers </span>
+                    </li>
+                    <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;合并k排序列表  </span>
+                    </li>
+                    <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;Find Median Given Frequency of Numbers  </span>
+                    </li>
+                    <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;使用'ls'命令后，Linux系统中发生了什么？</span>
+                    </li>
+                    <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;3Sum Closest </span>
+                    </li>
+                </ul>
+            </div>
+            <hr class="hrr">
+            <div style="height: 335px;background: #ffffff;margin-top: 30px">
+                <p style="font-size: 20px"><img src="img/Group%2037.png" class="gang"/>&nbsp;&nbsp;&nbsp;热门题</p>
+                <ul>
+                    <li style="margin-top: 1.5rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;TestRabbit.java</span>
+                    </li>
+                    <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;Consecutive Numbers </span>
+                    </li>
+                    <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;合并k排序列表  </span>
+                    </li>
+                    <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;Find Median Given Frequency of Numbers  </span>
+                    </li>
+                    <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;使用'ls'命令后，Linux系统中发生了什么？</span>
+                    </li>
+                    <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;3Sum Closest </span>
+                    <li style="margin-top: 24px;margin-left: 20px">
+                        <button class="fmore">展开更多 ∨</button>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div style="height: 34rem;background: #ffffff">
+                <p style="font-size: 20px"><img src="img/Group%2037.png" class="gang"/>&nbsp;&nbsp;&nbsp;热门大佬</p>
+                <li style="margin-top: 2rem"><span class="try2"><img src="img/gates.jpg" class="tx"/>&nbsp;&nbsp;&nbsp;&nbsp;Bill Gates</span>
+                </li>
+                <li style="margin-top: 1rem"><span class="try2"><img src="img/timg.jpg" class="tx"/>&nbsp;&nbsp;&nbsp;&nbsp;コナン</span>
+                </li>
+                <li style="margin-top: 1rem"><span class="try2"><img src="img/berger.jpg" class="tx"/>&nbsp;&nbsp;&nbsp;&nbsp;扎克伯格</span>
+                </li>
+                <li style="margin-top: 1rem"><span class="try2"><img src="img/vczh.jpg" class="tx"/>&nbsp;&nbsp;&nbsp;&nbsp;VCZH</span>
+                </li>
+                <li style="margin-left: 60px">
+                    <button class="fmore" style="margin-top: 2rem">展开更多 ∨</button>
+                </li>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div style="background: #262626;" class="footer">
+    <span style="display: inline-block;margin-left: 16%">
+        <ul>
+            <li style="font-size: 16px"><b>友情链接</b></li>
+            <li style="font-size: 14px;margin-top: 10px">关于我们<br>
+                团队介绍<br>
+                商务合作
+            </li>
+
+        </ul>
+    </span>
+    <span style="display: inline-block;margin-left: 100px">
+        <ul>
+            <li style="font-size: 16px"><b>公司资料</b></li>
+            <li style="font-size: 14px;margin-top: 10px">
+                GitBook<br>
+                GitHub<br>
+                GitLab
+            </li>
+
+        </ul>
+    </span>
+    <span style="display: inline-block;margin-left: 100px;margin-top: 30px">
+        <ul>
+            <li style="font-size: 16px"><b>相关产品</b></li>
+            <li style="font-size: 14px;margin-top: 10px">
+                Android<br>
+                iOS<br>
+                微信公众号
+            </li>
+        </ul>
+    </span>
+    <div style="display: inline-block;margin-left: 100px">
+        <ul>
+            <li style="font-size: 16px"><b>隐私及条款</b></li>
+            <li style="font-size: 14px;margin-top: 10px">
+                隐私政策<br>
+                行为准则<br>
+                侵权条款
+            </li>
+        </ul>
+    </div>
+    <div style="display: inline-block;margin-left: 100px">
+        <ul>
+            <li style="font-size: 16px"><b>联系我们</b></li>
+            <li style="font-size: 14px;margin-top: 10px">
+                地址：北京市 海淀区 清华科技园 科建大厦8楼<br>
+                电话：010-12345678<br>
+                邮箱：haomokeji@haomo-studio.com
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+
+</body>
+</html>

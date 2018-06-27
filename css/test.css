@@ -1,0 +1,41 @@
+.table2 tr{
+
+    height: 210px;
+}
+
+.table2 td{
+    width: 285px;
+}
+.partcard{
+    width: 276px;
+    height: 195px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.24);
+    border-radius: 6px;
+    text-align: center;
+}
+
+.cardone{
+    font-size: 12px;
+    float: left;
+    margin-left: 14px;
+    margin-top: 14px;
+    color: #999999;
+}
+
+.cardone img{
+    width: 12.4px;
+    height: 11.7px;
+}
+
+.time{
+    float: right;
+    font-size: 12px;
+    margin-right: 14px;
+    margin-top: 14px;
+    color: #999999;
+}
+.time img{
+    width: 11.7px;
+    height: 11.7px;
+}
